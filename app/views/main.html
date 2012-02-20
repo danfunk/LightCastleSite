@@ -1,0 +1,21 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta charset="${_response_encoding}">
+    <title>#{get 'title' /}</title>
+    #{get 'moreStyles' /}
+    <link rel="shortcut icon" type="image/png" href="@{'/public/images/favicon.png'}">
+    <script src="@{'/public/javascripts/jquery-1.6.4.min.js'}" type="text/javascript" charset="${_response_encoding}"></script>
+    #{get 'moreScripts' /}
+</head>
+
+<body>
+#{doLayout /}
+<div id="footernav_container">
+    <a href="@{ Application.sysadmin() }">System Administration</a> • <a href="@{ Application.webdev() }">Web Development</a> • <a href="@{ Application.analysis() }">Analysis & Documentation</a> • <a href="@{ Application.about() }">About Us</a> • <a href="@{ Application.contact() }">Contact Us</a></div>
+
+<div id="footer">© Copyright LightCastle Technical Consulting. All rights reserved.</div>
+
+</body>
+</html>

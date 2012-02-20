@@ -1,0 +1,21 @@
+#{extends 'main.html' /}
+
+#{set 'moreStyles'}
+  #{stylesheet id:'main', media:'screen', src:'main.css' /}
+#{/set}
+
+<div id="h${level}_#{get 'header' /}" class="header_lvl${level}">
+    <div id="nav_bar">
+        <div class="navlast"></div>
+        #{lc.menuItem class:'navbutton', activeStyle:'navdown', header:get('header'), action:@Application.contact()}Contact Us#{/lc.menuItem}
+        #{lc.menuItem class:'navbutton', activeStyle:'navdown', header:get('header'), action:@Application.about()}About Us#{/lc.menuItem}
+        #{lc.menuItem class:'navbutton', activeStyle:'navdown', header:get('header'), action:@Application.analysis()}Analysis &amp; Documentation#{/lc.menuItem}
+        #{lc.menuItem class:'navbutton', activeStyle:'navdown', header:get('header'), action:@Application.webdev()}Web Development#{/lc.menuItem}
+        #{lc.menuItem class:'navbutton', activeStyle:'navdown', header:get('header'), action:@Application.sysadmin()}System Administration#{/lc.menuItem}
+        #{lc.menuItem class:'navbutton', activeStyle:'navdown', header:get('header'), action:@Application.index()}Home#{/lc.menuItem}
+        <div class="navfirst"></div>
+    </div>
+</div>
+
+#{doLayout /}
+

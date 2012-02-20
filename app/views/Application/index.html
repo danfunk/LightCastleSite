@@ -1,0 +1,38 @@
+#{extends 'main.html' /}
+#{set title:'Home' /}
+
+#{set 'moreStyles'}
+  #{stylesheet id:'index', media:'screen', src:'index.css' /}
+#{/}
+
+<div id="header"></div>
+
+<div id="content_container">
+    <div id="indexbox1" class="indexbox">
+        <p><strong><a href="@{ Application.sysadmin() }">Astute System Administration</a></strong></p>
+        <p> We offer comprehensive support for your Linux/Unix systems: software installation, steadfast
+            system monitoring, security patching, and clustered, high-availability hardware and accompanying
+            software. We build low-cost, high-availability systems so that you can focus on your business and
+            technical goals. <a href="@{ Application.sysadmin() }">Learn more</a>. </p>
+        <p><img src="/public/images/index_sysadmin.jpg" width="258" height="166" /></p>
+    </div>
+    <div id="indexbox2" class="indexbox">
+        <p><strong><a href="@{ Application.webdev() }">Advanced Web Development</a></strong></p>
+        <p> We provide custom software development using leading technologies, specializing in full-text search
+            functionality, and bolstering your internationalization and e-commerce needs. And we’ll usher your
+            existing applications onto mobile platforms and assist in creating your online communities.
+            <a href="@{ Application.webdev() }">Learn more</a>. </p>
+        <p><img src="/public/images/index_webdev.jpg" width="258" height="166" /></p>
+
+    </div>
+    <div id="indexbox3" class="indexbox">
+        <p><strong><a href="@{ Application.analysis() }">Technical Analysis &amp; Documentation</a></strong></p>
+        <p> With exceptional analysis and documentation that accompanies our services, we ease the minds of our
+            non-technical clientele while providing the detail needed by fellow IT professionals. Through our
+            passion for brevity and clarity, we demystify complex technical solutions.
+            <a href="@{ Application.analysis() }">Learn more</a>. </p>
+        <p><img src="/public/images/index_analysis.jpg" width="258" height="166" /></p>
+
+    </div>
+    <div class="clear_both"></div>
+</div>

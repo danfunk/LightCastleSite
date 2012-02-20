@@ -1,0 +1,34 @@
+#{extends 'subpage.html' /}
+#{set header:'sysadmin' /}
+
+<div id="content_container">
+    <h2>Systems You Can Count On.</h2>
+    <p> <img src="/public/images/servers.png" alt="servers" width="368" height="244" class="float_right" />
+        We offer comprehensive support for your Linux systems, including variations of Unix. Services not only imply
+        software installation, but also extend to system monitoring, security patching, and constructing clustered,
+        high-availability hardware and supporting software. With tools like Nagios, Cacti, and OSSEC, we offer
+        steadfast application monitoring and useful documentation, building low-cost, high-availability systems--so
+        you can focus on your business goals.
+    </p>
+
+    <ul>
+        <li>System Administration Services</li>
+        <li>Linux/Unix System Administration</li>
+        <li>High-Availability Server Support</li>
+        <li>System Monitoring and Reporting</li>
+        <li>Security and Vulnerability Analysis</li>
+        <li>Cloud Computing Expertise</li>
+        <li>Acceptance Test Plan Writing</li>
+        <li>Documentation and High-Touch Communication
+            and supporting software.</li>
+    </ul>
+    <h3>Check out our Success Stories.</h3>
+    <ul>
+        <li><a href="@{Stories.monitoring()}">Using Open Source Monitoring Application Cacti to Fine-tune Ntelos’ Servers</a></li>
+        <li><a href="@{Stories.clustering()}">Clustering and Server Support</a></li>
+        <li><a href="@{Stories.mops()}">Methods of Procedure</a></li>
+        <li> <a href="@{Stories.reporting()}">Reporting</a></li>
+        <li> <a href="@{Stories.testing()}">Testing</a></li>
+    </ul>
+</div>
+
