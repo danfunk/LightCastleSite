@@ -124,6 +124,12 @@ body {
 
 }
 
+ul.stories li a.current {
+    text-decoration: none;
+    color: gray;
+    cursor: pointer;
+}
+
 #col1 {width:530px; float:left;}
 #col2 {width:200px; float:right;}
 

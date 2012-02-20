@@ -34,8 +34,6 @@ public class MyFastTag extends FastTags {
         args.remove("activeStyle");
         args.remove("inactiveStyle");
 
-        
-        
         if (className != null) {
             style += " " + className;
         }
@@ -48,7 +46,6 @@ public class MyFastTag extends FastTags {
         else if (!Http.Request.current().action.equals(actionDef.action) && inactiveStyle != null) {
             style += " " + inactiveStyle;
         }
-
         out.print("<a href=\"" + actionDef.url + "\" class=\"" + style + "\" " + serialize(args, "href") + ">");
         out.print(JavaExtensions.toString(body));
         out.print("</a>");
