@@ -7,7 +7,7 @@
 <div id="h${level}_#{get 'header' /}" class="header_lvl${level}">
     <div id="nav_bar">
         <div class="navlast"></div>
-        #{lc.menuItem class:'navbutton', activeStyle:'navdown', header:get('header'), action:@Application.contact()}Contact Us#{/lc.menuItem}
+        <a href="#contactForm" class="navbutton">Contract Us</a>
         #{lc.menuItem class:'navbutton', activeStyle:'navdown', header:get('header'), action:@Application.about()}About Us#{/lc.menuItem}
         #{lc.menuItem class:'navbutton', activeStyle:'navdown', header:get('header'), action:@Application.analysis()}Analysis &amp; Documentation#{/lc.menuItem}
         #{lc.menuItem class:'navbutton', activeStyle:'navdown', header:get('header'), action:@Application.webdev()}Web Development#{/lc.menuItem}
