@@ -4,18 +4,40 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta charset="${_response_encoding}">
     <title>#{get 'title' /}</title>
+    #{stylesheet id:'contact', media:'screen', src:'contact.css' /}
+    #{stylesheet id:'custom', media:'screen', src:'custom-theme/jquery-ui-1.8.18.custom.css' /}
     #{get 'moreStyles' /}
     <link rel="shortcut icon" type="image/png" href="@{'/public/images/favicon.png'}">
-    <script src="@{'/public/javascripts/jquery-1.6.4.min.js'}" type="text/javascript" charset="${_response_encoding}"></script>
-    #{get 'moreScripts' /}
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+        google.load("jquery", "1.7.1");
+        google.load("jqueryui", "1.8.17");
+    </script>
+    #{script id:'contactus', src:'contactus.js'/}
+
+#{get 'moreScripts' /}
 </head>
 
 <body>
 #{doLayout /}
 <div id="footernav_container">
-    <a href="@{ Application.sysadmin() }">System Administration</a> • <a href="@{ Application.webdev() }">Web Development</a> • <a href="@{ Application.analysis() }">Analysis & Documentation</a> • <a href="@{ Application.about() }">About Us</a> • <a href="@{ Application.contact() }">Contact Us</a></div>
-
+    <a href="@{ Application.sysadmin() }">System Administration</a> • <a href="@{ Application.webdev() }">Web Development</a> • <a href="@{ Application.analysis() }">Analysis & Documentation</a> • <a href="@{ Application.about() }">About Us</a> • <a class="contact" href="#contact">Contact Us</a></div>
 <div id="footer">© Copyright LightCastle Technical Consulting. All rights reserved.</div>
+
+<!-- This is hidden initially -->
+<div id="contact-div" title="Create new user">
+    <p class="validateTips">Let us know how we can help you:</p>
+    <form id="contact-form" method="post" action="@{Application.sendMessage()}">
+        <fieldset>
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" class="text ui-widget-content ui-corner-all" />
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email" value="" class="text ui-widget-content ui-corner-all" />
+            <label for="message" style="padding-top: .5em;">Your Message</label>
+            <textarea name="message" id="message" placeholder="Please type your message" required="required" cols="65" rows="8" maxlength="10000"></textarea>
+        </fieldset>
+    </form>
+</div>
 
 </body>
 </html>
