@@ -46,7 +46,7 @@ $(function() {
                 var bValid = true;
                 allFields.removeClass( "ui-state-error" );
 
-                bValid = bValid && checkLength( name, "name", 3, 16 );
+                bValid = bValid && checkLength( name, "name", 3, 80 );
                 bValid = bValid && checkLength( email, "email", 6, 80 );
 
                 // From jquery.validate.js (by joern), contributed by Scott Gonzalez: http://projects.scottsplayground.com/email_address_validation/
