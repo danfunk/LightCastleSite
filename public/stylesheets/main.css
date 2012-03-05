@@ -133,6 +133,14 @@ ul.stories li a.current {
 #col1 {width:530px; float:left;}
 #col2 {width:200px; float:right;}
 
+div.quote {
+    float: left;
+    background: url(/public/images/quote.png) top left no-repeat;
+    width: 44px;
+    height: 46px;
+    padding: 0 10px 10px 0;
+}
+
 #footernav_container {
 	width:100%;
 	border-top:solid 1px #CCC;
