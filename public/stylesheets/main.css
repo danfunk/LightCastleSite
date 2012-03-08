@@ -65,6 +65,18 @@ body {
 #h3_about {background:url(/public/images/header3_about.jpg) top left no-repeat;}
 #h3_contact {background:url(/public/images/header3_contact.jpg) top left no-repeat;}
 
+#quotation {
+    float: right;
+    margin: 10px;
+    line-height: 1.3em;
+    width: 350px;
+    font-style: italic;
+}
+
+#quotation .source {
+    margin-left: 20px;
+    font-style: normal;
+}
 
 #nav_bar {
 	background:url(/public/images/navbar_bg.jpg) top left no-repeat;
