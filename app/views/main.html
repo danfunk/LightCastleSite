@@ -13,6 +13,7 @@
         google.load("jquery", "1.7.1");
         google.load("jqueryui", "1.8.17");
     </script>
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBoaR5EnuvEShSZ3xF6XDWVW91dcYxQsX8&sensor=true"></script>
     #{script id:'contactus', src:'contactus.js'/}
 
 #{get 'moreScripts' /}
@@ -26,17 +27,21 @@
 
 <!-- This is hidden initially -->
 <div id="contact-div" title="Contact Us">
-    <p class="validateTips">Let us know how we can help you:</p>
+    <p class="validateTips"></p>
+    <div class="address">
+        <b>540-324-5111</b> <br/>
+        PO Box 1906<br/>
+        Staunton, Va 24402
+    </div>
+    <div class="message"><h3>Send us a message:</h3>
     <form id="contact-form" method="post" action="@{Application.sendMessage()}">
         <fieldset>
-            <label for="name">Name</label>
-            <input type="text" name="name" id="name" class="text ui-widget-content ui-corner-all" />
-            <label for="email">Email</label>
-            <input type="text" name="email" id="email" value="" class="text ui-widget-content ui-corner-all" />
-            <label for="message" style="padding-top: .5em;">Your Message</label>
+            <input type="text" name="name" id="name"  placeholder="Name" class="text ui-widget-content ui-corner-all" />
+            <input type="text" name="email" id="Email" placeholder="Email address"  value="" class="text ui-widget-content ui-corner-all" />
             <textarea name="message" id="message" placeholder="Please type your message" required="required" cols="60" rows="6" class="ui-widget-content ui-corner-all"></textarea>
         </fieldset>
     </form>
+    </div>
 </div>
 
 </body>

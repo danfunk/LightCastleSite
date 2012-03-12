@@ -149,8 +149,9 @@ div.quote {
     float: left;
     background: url(/public/images/quote.png) top left no-repeat;
     width: 44px;
-    height: 46px;
-    padding: 0 10px 10px 0;
+    height: 48px;
+    padding: 0 10px 0px 0;
+
 }
 
 #footernav_container {
