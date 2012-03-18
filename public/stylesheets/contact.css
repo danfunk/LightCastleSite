@@ -19,11 +19,17 @@ a.selected {
     padding: 25px 25px 20px;
 }
 
+#contact-form {
+}
+
 label {
-    display: block;
+    float: left;
     margin-bottom: 3px;
     padding-left: 15px;
+    padding-right: 10px;
+    text-align: right;
     text-indent: -15px;
+    width: 50px;
 }
 
 .messagepop p, .messagepop.div {
@@ -32,9 +38,17 @@ label {
     padding-bottom: 8px;
 }
 
-
-label, input { display:block; }
-input.text { margin-bottom:12px; width:95%; padding: .4em; }
+input { display:block; }
+#email_button {
+    float: right;
+    margin-right: 12px;
+    margin-top: 10px;
+}
+input.text {
+    margin-bottom: 12px;
+    padding: 0.4em;
+    width: 220px;
+    }
 fieldset { padding:0; border:0; margin-top:25px; }
 h1 { font-size: 1.2em; margin: .6em 0; }
 .ui-dialog .ui-state-error { padding: .3em; }

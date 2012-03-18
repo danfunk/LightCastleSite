@@ -19,6 +19,7 @@ public class Application extends Controller {
     public static void webdev() { render(); }
     public static void analysis() { render();}
     public static void about() { render();}
+    public static void contact() { render();}
 
     /**
      * Handles the form input from the contact us page.
@@ -41,6 +42,7 @@ public class Application extends Controller {
             Logger.error(e, "Failed to create email!");
         }
         Mail.send(email);
+        render();
     }
 
 }

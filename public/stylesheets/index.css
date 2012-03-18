@@ -20,6 +20,11 @@ body {
 		margin-top:13px;
 }
 
+#header p {
+    padding-left: 145px;
+    padding-top: 389px;
+}
+
 #content_container {
 	width:920px;
 }
