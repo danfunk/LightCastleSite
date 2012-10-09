@@ -10,5 +10,7 @@ public class People extends Controller {
     }
     public static void tamara() { render();}
     public static void dan() { render();}
+    public static void fred() { render();}
+    public static void josh() { render();}
 }
 
