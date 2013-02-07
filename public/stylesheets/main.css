@@ -20,6 +20,15 @@ body {
 	margin:0px 0px 10px 10px;
 }
 
+.image_wrapper {
+    float:right;
+    width: 400px;
+    font-size: .9em;
+    font-style: italic;
+    margin: 5px;
+    line-height: 1.5em;
+}
+
 .clear_both {
 	clear:both;	
 }
@@ -125,7 +134,7 @@ body {
 	background:#FEFEFE url(/public/images/content_bg.jpg) bottom left repeat-x;
 	margin:20px 0px 20px 0px;
 	padding:20px 45px 25px 105px;
-	min-height: 450px;
+	min-height: 540px;
 
 	-webkit-box-shadow: 2px 2px 7px 0px #CCCCCC;
 	-moz-box-shadow: 2px 2px 7px 0px #CCCCCC;

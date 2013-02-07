@@ -16,5 +16,7 @@ public class Stories extends Controller {
     public static void reporting() { render();}
     public static void ruby() { render();}
     public static void solr() { render();}
+    public static void xslt() { render();}
+    public static void xslt2() { render();}
     public static void testing() { render();}
 }
